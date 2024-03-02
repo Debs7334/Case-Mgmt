@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <style>
+            .button {
+			    width:100px;
+				height:40px;
+                background-color: #059a19;
+                border: none;
+                color: white;
+                text-align: center;
+                font-size: 17px;
+                border-radius: 8px;
+            }
+            .textfield {
+				border:1;
+				outline:none;
+				display:inline-block;
+				height:30px;
+				vertical-align:middle;
+				position:relative;
+				right:5px;
+				border-radius:10px;
+				width:220px;
+				box-sizing:border-box;
+				padding:0 18px;            
+			}
+        </style>
+    </head>
+    <body>
+        <center>
+            <br><br><br><br><br><br><br>
+            <table width="700" height="350" border="2" align="center">
+                <tr>
+                    <td align="center">
+                        <form name="f1" action="" method="">
+                            <table width="650" align="center" >
+                                <tr height="80" align="center">
+                                    <td colspan="2">
+                                        <font color="#B22222" size="12px" align="center"><b> Login </b></font>
+                                        <font color="mediumSeaGreen" size="4px"><sub><b>FOR ALL</b></sub></font>
+                                        <hr style=" height:2px; background-color:gray">
+                                    </td>
+                                </tr>
+                                <tr height="70">
+                                    <td>Login Category : </td>
+                                    <td>
+                                        <select class="textfield" >
+                                            <option value="" align="center">-SELECT-</option>
+                                            <option value="judge" align="center">Judge</option>
+                                            <option value="advocate" align="center">Advocate</option>
+                                            <option value="admin" align="center">Admin</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr height="50">
+                                    <td>Email ID or Phone Number : </td>
+                                    <td><input type="text" class="textfield" name="txtmail" size="30" placeholder="Registered Email or Phone No."></td>
+                                </tr>
+                                <tr height="70">
+                                    <td>Password : </td>
+                                    <td><input type="password" class="textfield" name="txtpass" size="30" placeholder=" Passsword "></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <input class="button" type="submit" name="btnsub" value="Submit">
+                            <input class="button" type="reset" name="btnres" value="Reset"><br>
+                            <a href="#">Forgot Passsword</a><br>
+                            <a href="#">Sign Up</a>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

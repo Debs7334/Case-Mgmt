@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Advocate Sign Up Page</title>
+        <script language="javascript">
+        function showphoto(){
+            var path,photo;
+            path=document.f1.filephoto.value;
+            photo=path.substring(path.lastIndexOf("\\")+1);
+            document.f1.imgphoto.src=photo;
+            }
+        </script>
+        <style>
+            .button {
+			    width:150px;
+				height:50px;
+                background-color: #059a19;
+                border: none;
+                color: white;
+                text-align: center;
+                font-size: 17px;
+                border-radius: 8px;
+            }
+            .textfield {
+				border:1;
+				outline:none;
+				display:inline-block;
+				height:30px;
+				vertical-align:middle;
+				position:relative;
+				right:5px;
+				border-radius:10px;
+				width:220px;
+				box-sizing:border-box;
+				padding:0 18px;            
+			}
+        </style>
+    </head>
+    <body>
+        <center>
+            <br>
+            <form name="f1" action="advsignupS.jsp" method="POST">
+            <font color="#B22222" size="12px"><b> Sign Up </b></font>
+            <font color="mediumSeaGreen" size="4px"><sub><b>ADVOCATE</b></sub></font><br><br>
+            <hr style=" height:2px; background-color:gray">
+            <br><br><br>
+            <table width="900">
+                <tr>
+                    <td>Registation Number :</td>
+                    <td><input type="text" class="textfield" name="txtreg" placeholder="OR-05-YYYY"></td>
+                    <td rowspan="8" colspan="3">
+                        <img src="bgperson.jpg" class="textfield" name="imgphoto" alt="person" border="1" style="width: 180; height: 220; border-radius: 175px;"></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>First Name :</td>
+                    <td><input type="text" class="textfield" name="txtfname" placeholder="First Name"></td>
+                </tr>
+                <tr>
+                    <td>Middle Name :</td>
+                    <td><input type="text" class="textfield" name="txtmname" placeholder="Middle Name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name :</td>
+                    <td><input type="text" class="textfield" name="txtlname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Mail ID :</td>
+                    <td><input type="email" class="textfield" name="txtmail" placeholder="Email ID"></td>
+                </tr>
+                <tr>
+                    <td>Phone No :</td>
+                    <td><input type="text" class="textfield" name="txtphone" placeholder="Phone No."></td>
+                </tr>
+                <tr>
+                    <td>photo :</td>
+                    <td><input type="file" name="filephoto" onchange="showphoto()"></td>
+                </tr>
+                <tr>
+                    <td>Password :</td>
+                    <td><input type="password" class="textfield" name="txtname" placeholder=" Password"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password :</td>
+                    <td><input type="text" class="textfield" name="txtname" placeholder="Confirm Password"></td>
+                </tr>
+            </table>
+            <br><br><br><br><br>
+            <input class="button" type="submit" name="btnsub" value="Submit">
+            <input class="button" type="button" name="btnlogin" value="Login">
+            <input class="button" type="reset" name="btnres" value="Reset">
+        </form>
+        </center>
+    </body>
+</html>
